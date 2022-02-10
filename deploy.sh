@@ -16,6 +16,8 @@ git add -A
 git commit -m 'deploy'
 
 # if you are deploying to https://<USERNAME>.github.io/<REPO>
-git push -f git@gitee.com:zxl-01/zxl.git master
+
+# Todo: 修改推送的项目地址
+git push -f xxxxxxx.git master
 
 cd -

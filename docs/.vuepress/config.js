@@ -1,3 +1,5 @@
+const sideBar = require('./util/autoCreateSideBar')
+
 module.exports = {
 	title: "Zhang XL",
 	description: 'Hope have a good sleep',
@@ -41,15 +43,6 @@ module.exports = {
 		// 自动形成侧边导航
 		subSidebar: 'auto',
 		sidebarDepth: 1,
-		sidebar: {
-			'/technology/blog/': [
-				{
-					title: "博客声明",
-					children: [
-						''
-					]
-				},
-			]
-		}
+		sidebar: sideBar.createSideBar()
 	},
 }
